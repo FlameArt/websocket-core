@@ -2,6 +2,8 @@
 
 Websocket mini-framework for fast start work with many-clients and process messages on `Node.js`
 
+    npm install --save FlameArt/websocket-core
+
 ## Features
 * Run websocket server and work with json-messages in 3 lines of code
 * **Multiply users model** with session per each
@@ -17,7 +19,7 @@ Websocket mini-framework for fast start work with many-clients and process messa
 Just extend `WebSocketCore` and override handlers:
 
 ```
-const WebSocketCore = require("WebSocketCore");
+const WebSocketCore = require("websocket-core");
 
 class MyWebSocket extends WebSocketCore {
 	
