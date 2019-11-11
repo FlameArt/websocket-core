@@ -1,0 +1,29 @@
+{
+  "name": "websocket-core",
+  "version": "1.0.0",
+  "description": "Websocket framework with async auth, json-messages, user model, automatic ping-pong and more",
+  "main": "WebSocketCore.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/FlameArt/websocket-core.git"
+  },
+  "keywords": [
+    "websocket",
+    "ws",
+    "node",
+    "framework",
+    "auth",
+    "async"
+  ],
+  "author": "FlameArt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FlameArt/websocket-core/issues"
+  },
+  "homepage": "https://github.com/FlameArt/websocket-core#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "ws": "^7.2.0"
+  }
+}
