@@ -206,10 +206,11 @@ class BaseWebSocket {
                         // обработки любых сообщений
                         let isMessageOk = await me.getMessage(json, me_user, message);
                     
-                        // При плохом исходе парса - делаем дисконнект
-                        if (!isMessageOk) {
+                        // Если функция вернула false, дисконнектимся
+                        if (isMessageOk===false) {
                             me.closeConnect(ws, "");
                             console.log("Bad parsing client message");
+                            console.log("Message: " + message);
                             return false;
                         }
                     
